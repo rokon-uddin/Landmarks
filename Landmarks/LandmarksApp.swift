@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct LandmarksApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+
+  init() {
+    UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+    UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+    UINavigationBar.appearance().barTintColor = UIColor.black
+  }
+
+  var body: some Scene {
+    WindowGroup {
+      HomeView()
     }
+  }
 }
